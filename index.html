@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ucsm student form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">UCSM student Survey Form</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to fill out informations for us
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which year are you in?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Please choose your enrolled year</option>
+              <option value="1st">First Year</option>
+              <option value="2nd">Second Year</option>
+              <option value="3rd">Third Year</option>
+              <option value="4th">Fourth Year</option>
+              <option value="5th">Final year</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>What is your gender?</p>
+            <label>
+              <input
+                name="gender"
+                value="male"
+                type="radio"
+                class="input-radio"
+              />Male</label>
+            <label>
+              <input
+                name="gender"
+                value="female"
+                type="radio"
+                class="input-radio"
+              />Female</label>
+      
+            <label
+              ><input
+                name="gender"
+                value="other"
+                type="radio"
+                class="input-radio"
+              />Other</label>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is your major?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>choose your major</option>
+              <option value="bis">Business Information System</option>
+              <option value="se">Software Engineering</option>
+              <option value="ke">Knowledge Engineering</option>
+              <option value="hpc">High Performance Computing</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is your favourite club(s) in UCSM?
+              <span class="club"></span>
+            </p>
+      
+            <label
+              ><input
+                name="club"
+                value="dance"
+                type="checkbox"
+                class="input-checkbox"
+              />Dance Club</label
+            >
+            <label>
+              <input
+                name="club"
+                value="music"
+                type="checkbox"
+                class="input-checkbox"
+              />Music Club</label
+            >
+            <label
+              ><input
+                name="club"
+                value="design"
+                type="checkbox"
+                class="input-checkbox"
+              />Design Club</label
+            >
+            <label
+              ><input
+                name="club"
+                value="coding"
+                type="checkbox"
+                class="input-checkbox"
+              />Coding Club</label
+            >
+            <label
+              ><input
+                name="club"
+                value="soccer"
+                type="checkbox"
+                class="input-checkbox"
+              />Soccer Club</label
+            >
+            <label
+              ><input
+                name="club"
+                value="va"
+                type="checkbox"
+                class="input-checkbox"
+              />VA club</label>
+            <label>
+              <input
+                name="club"
+                value="crochet"
+                type="checkbox"
+                class="input-checkbox"
+              />Crochet Club</label>
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              SUBMIT
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
